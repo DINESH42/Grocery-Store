@@ -1,10 +1,14 @@
+import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
-import Header from "./Components/Header/Header";
+import { URL } from "./constants";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
     <div className="App">
-      <Header />
+      <BrowserRouter>
+        <Route path={URL.HOME} component={Dashboard} />
+      </BrowserRouter>
     </div>
   );
 }
