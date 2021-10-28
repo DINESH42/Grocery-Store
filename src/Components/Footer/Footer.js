@@ -35,15 +35,15 @@ export default function Footer() {
             </a>
             <a href="/">
               <i className="fas fa-arrow-right"></i>My favorite
-              <a href="/">
-                <i className="fas fa-arrow-right"></i>My wishlist
-              </a>
-              <a href="/">
-                <i className="fas fa-arrow-right"></i>My account
-              </a>
-              <a href="/">
-                <i className="fas fa-arrow-right"></i>term or use
-              </a>
+            </a>
+            <a href="/">
+              <i className="fas fa-arrow-right"></i>My wishlist
+            </a>
+            <a href="/">
+              <i className="fas fa-arrow-right"></i>My account
+            </a>
+            <a href="/">
+              <i className="fas fa-arrow-right"></i>term or use
             </a>
           </div>
           <div className="box">
