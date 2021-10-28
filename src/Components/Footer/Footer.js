@@ -49,16 +49,16 @@ export default function Footer() {
           <div className="box">
             <h3>Follow me</h3>
             <a href="https://www.facebook.com/350dkcse/">
-              <i class="fab fa-facebook-f"></i> facebook
+              <i className="fab fa-facebook-f"></i> facebook
             </a>
             <a href="https://twitter.com/Dineshk47042114">
-              <i class="fab fa-twitter"></i> twitter
+              <i className="fab fa-twitter"></i> twitter
             </a>
             <a href="/">
-              <i class="fab fa-instagram"></i> instagram
+              <i className="fab fa-instagram"></i> instagram
             </a>
             <a href="https://www.linkedin.com/in/dinesh-kumar-38424614a/">
-              <i class="fab fa-linkedin"></i> linkedin
+              <i className="fab fa-linkedin"></i> linkedin
             </a>
           </div>
           <div className="box">
