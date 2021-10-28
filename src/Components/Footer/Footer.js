@@ -47,6 +47,21 @@ export default function Footer() {
             </a>
           </div>
           <div className="box">
+            <h3>Follow me</h3>
+            <a href="/">
+              <i class="fab fa-facebook-f"></i> facebook
+            </a>
+            <a href="/">
+              <i class="fab fa-twitter"></i> twitter
+            </a>
+            <a href="/">
+              <i class="fab fa-instagram"></i> instagram
+            </a>
+            <a href="/">
+              <i class="fab fa-linkedin"></i> linkedin
+            </a>
+          </div>
+          <div className="box">
             <h3>new letters</h3>
             <p>subscribe for latest updates</p>
             <form action="">
