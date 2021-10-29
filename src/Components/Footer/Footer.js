@@ -73,7 +73,7 @@ export default function Footer() {
         </div>
       </section>
       <section className="credit">
-        created by Dinesh Kumar & all rights reserved
+        created by <span>Dinesh Kumar</span> & all rights reserved!
       </section>
     </div>
   );

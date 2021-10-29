@@ -172,7 +172,7 @@ export default function Header() {
           forget password <a href="/">click here</a>
         </p>
         <p>
-          don't have an account<a href="/">create one</a>
+          don't have an account?<a href="/">create one</a>
         </p>
       </form>
     </header>

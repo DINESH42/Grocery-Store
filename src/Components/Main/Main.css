@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --green: #bac34e;
+  --black: #222;
+  ---white: #fff;
+  ---light-color: #666;
+  ---light-bg: #f3f3f3;
+  ---border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  ---box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.home {
+  padding-top: 14rem;
+  background: url(../../assests/image/home-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+.home .slides-container .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  display: none;
+}
+.home .slides-container .slide.active {
+  display: flex;
+}
+.home .slides-container .slide .content {
+  flex: 1 1 40rem;
+}
+.home .slides-container .slide .content span {
+  color: var(---light-color);
+  font-size: 2.5rem;
+}
+.home .slides-container .slide .content h3 {
+  font-size: 6rem;
+  color: var(--black);
+  padding: 0.5rem 0;
+}
+.home .slides-container .slide .content .image {
+  flex: 1 1 40rem;
+}
+.home .slides-container .slide .content .image img {
+  width: 100%;
+}

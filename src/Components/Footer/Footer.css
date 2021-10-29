@@ -89,6 +89,9 @@ section {
   color: var(---white);
   font-size: 2rem;
 }
+.credit span {
+  color: var(--black);
+}
 
 /* Media queries */
 
