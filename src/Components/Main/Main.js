@@ -6,6 +6,22 @@ import home3 from "../../assests/image/home-img-3.png";
 import "./Main.css";
 
 export default function Main() {
+  let index = 0;
+  const onNext = () => {
+    let slides = document.querySelectorAll(".home .slides-container .slide");
+
+    slides[index].classList.remove("active");
+    index = (index + 1) % slides.length;
+    slides[index].classList.add("active");
+  };
+
+  const onPrev = () => {
+    let slides = document.querySelectorAll(".home .slides-container .slide");
+    slides[index].classList.remove("active");
+    index = (index - 1 + slides.length) % slides.length;
+    slides[index].classList.add("active");
+  };
+
   return (
     <section className="home">
       <div className="slides-container">
@@ -46,6 +62,16 @@ export default function Main() {
           </div>
         </div>
       </div>
+      <div
+        id="next-slide"
+        className="fas fa-angle-right"
+        onClick={() => onPrev()}
+      ></div>
+      <div
+        id="prev-slide"
+        className="fas fa-angle-left"
+        onClick={() => onNext()}
+      ></div>
     </section>
   );
 }

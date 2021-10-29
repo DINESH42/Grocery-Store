@@ -32,6 +32,19 @@ section {
   padding: 3rem 9%;
 }
 
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
+@keyframes fadeUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
 .home {
   padding-top: 14rem;
   background: url(../../assests/image/home-bg.jpg) no-repeat;
@@ -51,6 +64,7 @@ section {
 }
 .home .slides-container .slide .content {
   flex: 1 1 40rem;
+  animation: fadeLeft 0.4s linear 0.4s backwards;
 }
 .home .slides-container .slide .content span {
   color: var(---light-color);
@@ -66,4 +80,53 @@ section {
 }
 .home .slides-container .slide .content .image img {
   width: 100%;
+  animation: fadeUp 0.4s linear;
+}
+
+.home #next-slide,
+#prev-slide {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  box-shadow: var(---box-shadow);
+  text-align: center;
+  background: var(---white);
+  font-size: 3rem;
+  color: var(--black);
+  cursor: pointer;
+}
+.home #next-slide:hover,
+#prev-slide:hover {
+  background: var(--green);
+  color: var(---white);
+}
+.home #prev-slide {
+  left: 2rem;
+}
+
+.home #next-slide {
+  right: 2rem;
+}
+
+/* @media queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .home .slides-container .slide .content h3 {
+    font-size: 5rem;
+  }
 }
