@@ -76,11 +76,12 @@ section {
   color: var(--black);
   padding: 0.5rem 0;
 }
-.home .slides-container .slide .content .image {
+.home .slides-container .slide .image {
+  width: 100%;
   flex: 1 1 40rem;
   margin: 3rem 0;
 }
-.home .slides-container .slide .content .image img {
+.home .slides-container .slide .image img {
   width: 100%;
   animation: fadeUp 0.4s linear;
 }
