@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --green: #bac34e;
+  --black: #222;
+  ---white: #fff;
+  ---light-color: #666;
+  ---light-bg: #f3f3f3;
+  ---border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  ---box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 9%;
+}
+
+.banner-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+}
+.banner-container .banner {
+  width: 30%;
+  position: relative;
+  height: 25rem;
+  overflow: hidden;
+}
+.banner-container .banner:hover img {
+  transform: scale(1.2);
+}
+
+.banner-container .banner img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-container .banner .content {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translateY(-50%);
+}
+
+.banner-container .banner .content span {
+  color: var(---light-color);
+  font-size: 1.5rem;
+}
+.banner-container .banner .content h3 {
+  font-size: 2rem;
+  padding-top: 0.5rem;
+  color: var(--black);
+}
+.banner-container .banner .content .btn {
+  padding: 0.8rem 2.5rem;
+}
+
+/* @media queries */
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .banner-container .banner {
+    width: 45%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .banner-container .banner {
+    width: 100%;
+  }
+}

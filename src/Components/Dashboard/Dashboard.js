@@ -1,4 +1,5 @@
 import React from "react";
+import Banner from "../Banner/Banner";
 import Footer from "../Footer/Footer";
 import Header from "../Header/Header";
 import Main from "../Main/Main";
@@ -10,6 +11,7 @@ export default function Dashboard() {
       <Header />
       {/* <div className="space"></div> */}
       <Main />
+      <Banner />
       <Footer />
     </div>
   );
