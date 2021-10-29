@@ -77,6 +77,7 @@ section {
 }
 .home .slides-container .slide .content .image {
   flex: 1 1 40rem;
+  margin: 3rem 0;
 }
 .home .slides-container .slide .content .image img {
   width: 100%;
@@ -119,6 +120,15 @@ section {
   }
   section {
     padding: 3rem 2rem;
+  }
+  .home #next-slide,
+  .home #prev-slide {
+    transform: translateY(0);
+    top: 88%;
+  }
+  .home #prev-slide {
+    left: auto;
+    right: 8rem;
   }
 }
 
