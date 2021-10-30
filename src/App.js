@@ -2,12 +2,18 @@ import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import { URL } from "./constants";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import Shops from "./Components/Shops/Shops";
+import Header from "./Components/Header/Header";
+import Footer from "./Components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        <Route path={URL.HOME} component={Dashboard} />
+        <Route path={URL.HOME} component={Header} />
+        <Route exact path={URL.HOME} component={Dashboard} />
+        <Route path={URL.SHOPS} component={Shops} />
+        <Route path={URL.HOME} component={Footer} />
       </BrowserRouter>
     </div>
   );

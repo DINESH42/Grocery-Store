@@ -1,0 +1,238 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --green: #bac34e;
+  --black: #222;
+  ---white: #fff;
+  ---light-color: #666;
+  ---light-bg: #f3f3f3;
+  ---border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  ---box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+section {
+  padding: 3rem 9%;
+}
+
+.heading {
+  background: url(../../assests/image/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+.heading h1 {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.heading p {
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: var(---light-color);
+}
+.heading p a {
+  color: var(--black);
+}
+.heading p a:hover {
+  color: var(--green);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+  padding: 1.2rem 0;
+  border-bottom: var(---border);
+  color: var(--black);
+}
+.title span {
+  color: var(--green);
+  padding-left: 0.7rem;
+}
+
+.title a {
+  margin-left: auto;
+  color: var(---light-color);
+  font-size: 1.5rem;
+}
+
+.title a:hover {
+  color: var(--green);
+}
+
+.category .box-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* gap: 1.5rem; */
+}
+.category .box-container .box {
+  width: 20%;
+  text-align: center;
+}
+.category .box-container .box img {
+  height: 15rem;
+}
+.category .box-container .box h3 {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: var(---light-color);
+}
+.category .box-container .box:hover h3 {
+  color: var(--green);
+}
+
+.products .box-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2.4rem;
+}
+
+.products .box-container .box {
+  width: 23%;
+  position: relative;
+  background: var(---light-bg);
+  text-align: center;
+  overflow: hidden;
+}
+
+.products .box-container .box .icons {
+  position: absolute;
+  top: -105%;
+  left: 0;
+  height: 30rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(243, 243, 243, 0.8);
+  gap: 1rem;
+}
+.products .box-container .box:hover .icons {
+  top: 0;
+}
+.products .box-container .box .icons a {
+  font-size: 2rem;
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  background: var(---white);
+  box-shadow: var(---box-shadow);
+  color: var(---light-color);
+}
+.products .box-container .box .icons a:hover {
+  background: var(--green);
+  color: var(---white);
+}
+
+.products .box-container .box .images {
+  height: 30rem;
+  width: 100%;
+  overflow: hidden;
+}
+.products .box-container .box .images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.products .box-container .box .content {
+  padding: 1.5rem;
+}
+.products .box-container .box .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+.products .box-container .box .content .price {
+  font-size: 2rem;
+  padding: 1rem 0;
+  color: var(--black);
+}
+.products .box-container .box .content .stars i {
+  font-size: 1.7rem;
+  color: var(--green);
+}
+
+/* @media queries */
+
+@media (max-width: 1200px) {
+  .products .box-container {
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+  .products .box-container {
+    gap: 3rem;
+  }
+  .products .box-container .box {
+    width: 30%;
+  }
+  .category .box-container .box {
+    width: 25%;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: inline-block;
+  }
+  .category .box-container .box {
+    width: 33.33%;
+  }
+  .products .box-container {
+    gap: 3rem;
+  }
+  .products .box-container .box {
+    width: 46%;
+  }
+}
+
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+  .category .box-container .box {
+    width: 50%;
+  }
+  .category .box-container .box {
+    width: 50%;
+  }
+  .products .box-container .box {
+    width: 100%;
+  }
+}

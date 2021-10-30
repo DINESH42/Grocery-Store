@@ -1,5 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 import "./Header.css";
+import { URL } from "../../constants";
 import Cart1 from "../../assests/image/cart-1.jpg";
 import Cart2 from "../../assests/image/cart-2.jpg";
 import Cart3 from "../../assests/image/cart-3.jpg";
@@ -73,8 +74,8 @@ export default function Header() {
         <i className="fas fa-shopping-basket"></i> Grocery
       </a>
       <nav className="navbar">
-        <a href="/">Home</a>
-        <a href="/">Shop</a>
+        <a href={URL.HOME}>Home</a>
+        <a href={URL.SHOPS}>Shop</a>
         <a href="/">About</a>
         <a href="/">Review</a>
         <a href="/">Blog</a>
@@ -172,7 +173,7 @@ export default function Header() {
           forget password <a href="/">click here</a>
         </p>
         <p>
-          don't have an account?<a href="/">create one</a>
+          don't have an account?<a href="/">Create account</a>
         </p>
       </form>
     </header>
