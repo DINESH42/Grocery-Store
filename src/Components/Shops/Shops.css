@@ -99,6 +99,10 @@ section {
 }
 .category .box-container .box img {
   height: 15rem;
+  transition: transform 0.4s;
+}
+.category .box-container .box img:hover {
+  transform: scale(1.2);
 }
 .category .box-container .box h3 {
   font-size: 2rem;
