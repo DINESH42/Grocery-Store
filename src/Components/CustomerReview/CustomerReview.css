@@ -1,0 +1,163 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --green: #bac34e;
+  --black: #222;
+  ---white: #fff;
+  ---light-color: #666;
+  ---light-bg: #f3f3f3;
+  ---border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  ---box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 3rem 9%;
+}
+.heading {
+  background: url(../../assests/image/heading-bg.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding-top: 12rem;
+  padding-bottom: 8rem;
+}
+
+.heading h1 {
+  color: var(--black);
+  font-size: 4rem;
+}
+
+.heading p {
+  padding-top: 1rem;
+  font-size: 2rem;
+  color: var(---light-color);
+}
+.heading p a {
+  color: var(--black);
+}
+.heading p a:hover {
+  color: var(--green);
+}
+
+.info-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.info-container .info {
+  width: 33.33%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem 0;
+}
+
+.info-container .info img {
+  height: 7rem;
+}
+
+.info-container .info .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+  padding-bottom: 0.5rem;
+}
+.info-container .info .content span {
+  font-size: 1.5rem;
+  color: var(---light-color);
+}
+
+.review {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+.review .box {
+  width: 30%;
+  padding: 2rem;
+  border: var(---border);
+  margin: 10px;
+}
+.review .box .user {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.review .box .user img {
+  height: 7rem;
+  width: 7rem;
+  border-radius: 50%;
+}
+
+.review .box .user .info h3 {
+  font-size: 2.2rem;
+  color: var(--black);
+}
+.review .box .user .info span {
+  font-size: 1.4rem;
+  color: var(--green);
+}
+
+.review .box p {
+  font-size: 1.4rem;
+  color: var(---light-color);
+  line-height: 2;
+}
+
+/* @media queries */
+
+@media (max-width: 1200px) {
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+  section {
+    padding: 3rem 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  #menu-bar {
+    display: inline-block;
+  }
+  .info-container .info {
+    width: 50%;
+  }
+  .review .box {
+    width: 45%;
+  }
+}
+
+@media (max-width: 459px) {
+  html {
+    font-size: 50%;
+  }
+  .info-container .info {
+    width: 100%;
+  }
+  .review .box {
+    width: 100%;
+  }
+}
