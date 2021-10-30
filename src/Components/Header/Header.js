@@ -4,6 +4,7 @@ import { URL } from "../../constants";
 import Cart1 from "../../assests/image/cart-1.jpg";
 import Cart2 from "../../assests/image/cart-2.jpg";
 import Cart3 from "../../assests/image/cart-3.jpg";
+import Headers from "./Header.json";
 
 export default function Header() {
   const onSearchClick = () => {
@@ -67,6 +68,8 @@ export default function Header() {
     login.classList.remove("active");
     navbar.classList.remove("active");
   };
+
+  console.log("header value: ", Headers);
 
   return (
     <header className="header">

@@ -1,0 +1,19 @@
+{
+    "Banner":[
+        {
+            "limit":"Limited sales",
+            "offValue":"Upto 60% off",
+            "btnName":"Shop Now"
+        },
+        {
+            "limit":"Limited sales",
+            "offValue":"Upto 60% off",
+            "btnName":"Shop Now"
+        },
+        {
+            "limit":"Limited sales",
+            "offValue":"Upto 60% off",
+            "btnName":"Shop Now"
+        }
+    ]
+}
