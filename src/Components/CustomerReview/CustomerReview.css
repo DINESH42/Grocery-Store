@@ -73,6 +73,12 @@ section {
 
 .info-container .info img {
   height: 7rem;
+  transition: transform 0.4s;
+}
+
+.info-container .info img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
 }
 
 .info-container .info .content h3 {
