@@ -12,24 +12,20 @@ export default function Header() {
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
-    document.querySelector("#search-btn").onclick = () => {
-      searchForm.classList.toggle("active");
-      shoppingCart.classList.remove("active");
-      login.classList.remove("active");
-      navbar.classList.remove("active");
-    };
+    searchForm.classList.toggle("active");
+    shoppingCart.classList.remove("active");
+    login.classList.remove("active");
+    navbar.classList.remove("active");
   };
   const onShoppingCart = () => {
     let shoppingCart = document.querySelector(".shopping-cart");
     let searchForm = document.querySelector(".search-form");
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
-    document.querySelector("#cart-btn").onclick = () => {
-      shoppingCart.classList.toggle("active");
-      searchForm.classList.remove("active");
-      login.classList.remove("active");
-      navbar.classList.remove("active");
-    };
+    shoppingCart.classList.toggle("active");
+    searchForm.classList.remove("active");
+    login.classList.remove("active");
+    navbar.classList.remove("active");
   };
 
   const onLoginClick = () => {
@@ -37,12 +33,11 @@ export default function Header() {
     let searchForm = document.querySelector(".search-form");
     let shoppingCart = document.querySelector(".shopping-cart");
     let navbar = document.querySelector(".navbar");
-    document.querySelector("#login-btn").onclick = () => {
-      login.classList.toggle("active");
-      searchForm.classList.remove("active");
-      shoppingCart.classList.remove("active");
-      navbar.classList.remove("active");
-    };
+    login.classList.toggle("active");
+
+    searchForm.classList.remove("active");
+    shoppingCart.classList.remove("active");
+    navbar.classList.remove("active");
   };
 
   const onMenubar = () => {
@@ -50,12 +45,10 @@ export default function Header() {
     let searchForm = document.querySelector(".search-form");
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
-    document.querySelector("#menu-bar").onclick = () => {
-      navbar.classList.toggle("active");
-      searchForm.classList.remove("active");
-      shoppingCart.classList.remove("active");
-      login.classList.remove("active");
-    };
+    navbar.classList.toggle("active");
+    searchForm.classList.remove("active");
+    shoppingCart.classList.remove("active");
+    login.classList.remove("active");
   };
 
   window.onscroll = () => {
