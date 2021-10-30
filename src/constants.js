@@ -7,7 +7,7 @@ export const URL = {
   SHOPS: SERVICE_NAME + "shops",
   ABOUT: SERVICE_NAME + "about",
   REVIEW: SERVICE_NAME + "review",
-  SIGN_UP: SERVICE_NAME + "signup",
-  CUSTOMER_PAY: SERVICE_NAME + "customer-pay",
+  BLOGS: SERVICE_NAME + "blogs",
+  CONTACTUS: SERVICE_NAME + "contact-us",
   USER_PROFILE: SERVICE_NAME + "user-profile",
 };

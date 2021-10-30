@@ -78,8 +78,8 @@ export default function Header() {
         <a href={URL.SHOPS}>Shop</a>
         <a href={URL.ABOUT}>About</a>
         <a href={URL.REVIEW}>Review</a>
-        <a href="/">Blog</a>
-        <a href="/">Contact</a>
+        <a href={URL.BLOGS}>Blog</a>
+        <a href={URL.CONTACTUS}>Contact</a>
       </nav>
       <div className="icons">
         <div
