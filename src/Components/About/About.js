@@ -35,7 +35,7 @@ export default function About() {
             cumque molestiae blanditiis deleniti aspernatur, ab tempora quisquam
             sapiente commodi hic.
           </p>
-          <a href="#" class="btn">
+          <a href="#" className="btn">
             read more
           </a>
         </div>

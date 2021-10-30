@@ -8,6 +8,7 @@ import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
 import CustomerReview from "./Components/CustomerReview/CustomerReview";
 import Blogs from "./Components/Blogs/Blogs";
+import ContactUs from "./Components/ContactUs/ContactUs";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path={URL.ABOUT} component={About} />
         <Route path={URL.REVIEW} component={CustomerReview} />
         <Route path={URL.BLOGS} component={Blogs} />
+        <Route path={URL.CONTACTUS} component={ContactUs} />
         <Route path={URL.HOME} component={Footer} />
       </BrowserRouter>
     </div>
