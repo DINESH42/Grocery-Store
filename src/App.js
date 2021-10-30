@@ -6,6 +6,7 @@ import Shops from "./Components/Shops/Shops";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
 import About from "./Components/About/About";
+import CustomerReview from "./Components/CustomerReview/CustomerReview";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route exact path={URL.HOME} component={Dashboard} />
         <Route path={URL.SHOPS} component={Shops} />
         <Route path={URL.ABOUT} component={About} />
+        <Route path={URL.REVIEW} component={CustomerReview} />
         <Route path={URL.HOME} component={Footer} />
       </BrowserRouter>
     </div>
