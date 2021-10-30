@@ -76,7 +76,7 @@ export default function Header() {
       <nav className="navbar">
         <a href={URL.HOME}>Home</a>
         <a href={URL.SHOPS}>Shop</a>
-        <a href="/">About</a>
+        <a href={URL.ABOUT}>About</a>
         <a href="/">Review</a>
         <a href="/">Blog</a>
         <a href="/">Contact</a>

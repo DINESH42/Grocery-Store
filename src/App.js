@@ -5,6 +5,7 @@ import Dashboard from "./Components/Dashboard/Dashboard";
 import Shops from "./Components/Shops/Shops";
 import Header from "./Components/Header/Header";
 import Footer from "./Components/Footer/Footer";
+import About from "./Components/About/About";
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
         <Route path={URL.HOME} component={Header} />
         <Route exact path={URL.HOME} component={Dashboard} />
         <Route path={URL.SHOPS} component={Shops} />
+        <Route path={URL.ABOUT} component={About} />
         <Route path={URL.HOME} component={Footer} />
       </BrowserRouter>
     </div>
