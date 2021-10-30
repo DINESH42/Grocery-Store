@@ -14,7 +14,7 @@ export default function About() {
       <div className="heading">
         <h1>about us</h1>
         <p>
-          <a href="#">Home >></a>about
+          <a href="#">Home {">>"}</a>about
         </p>
       </div>
       <section className="about">
@@ -42,7 +42,7 @@ export default function About() {
       </section>
       <section className="gallery">
         <h1 className="title">
-          our <span>gallery</span> <a href={URL.SHOPS}>View all >></a>
+          our <span>gallery</span> <a href={URL.SHOPS}>View all {">>"}</a>
         </h1>
         <div className="box-container">
           <div className="box">

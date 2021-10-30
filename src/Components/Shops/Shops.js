@@ -21,12 +21,12 @@ export default function Shops() {
       <div className="heading">
         <h1>our shop</h1>
         <p>
-          <a href="#">Home >></a>Shop
+          <a href="#">Home{">>"}</a>Shop
         </p>
       </div>
       <section className="category">
         <h1 className="title">
-          our <span>category</span> <a href={URL.SHOPS}>View all >></a>
+          our <span>category</span> <a href={URL.SHOPS}>View all {">>"}</a>
         </h1>
         <div className="box-container">
           <a href={URL.SHOPS} className="box">
@@ -53,7 +53,7 @@ export default function Shops() {
       </section>
       <section className="products">
         <h1 className="title">
-          our <span>category</span> <a href={URL.SHOPS}>View all >></a>
+          our <span>category</span> <a href={URL.SHOPS}>View all {">>"}</a>
         </h1>
         <div className="box-container">
           <div className="box">
