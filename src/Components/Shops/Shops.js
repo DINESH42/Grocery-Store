@@ -21,7 +21,7 @@ export default function Shops() {
       <div className="heading">
         <h1>our shop</h1>
         <p>
-          <a href="#">Home{">>"}</a>Shop
+          <a href={URL.HOME}>Home{">>"}</a>Shop
         </p>
       </div>
       <section className="category">
@@ -58,9 +58,9 @@ export default function Shops() {
         <div className="box-container">
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct1} alt="" />
@@ -79,9 +79,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct2} alt="" />
@@ -100,9 +100,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct3} alt="" />
@@ -121,9 +121,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct4} alt="" />
@@ -142,9 +142,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct5} alt="" />
@@ -163,9 +163,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct6} alt="" />
@@ -184,9 +184,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct7} alt="" />
@@ -205,9 +205,9 @@ export default function Shops() {
           </div>
           <div className="box">
             <div className="icons">
-              <a href="#" className="fas fa-shopping-cart"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-eye"></a>
+              <i className="fas fa-shopping-cart"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-eye"></i>
             </div>
             <div className="images">
               <img src={imgProduct8} alt="" />

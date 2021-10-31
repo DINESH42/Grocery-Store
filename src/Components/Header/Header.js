@@ -66,7 +66,7 @@ export default function Header() {
 
   return (
     <header className="header">
-      <a href="/" className="logo">
+      <a href={URL.HOME} className="logo">
         <i className="fas fa-shopping-basket"></i> Grocery
       </a>
       <nav className="navbar">
@@ -140,12 +140,12 @@ export default function Header() {
         <h3 className="total">
           total: <span>$31.74</span>
         </h3>
-        <a href="" className="btn">
+        <a href={URL.HOME} className="btn">
           checkout cart
         </a>
       </div>
       <form action="" className="login-form">
-        <h3>Login From</h3>
+        <h3>Login</h3>
         <input
           type="email"
           name="name"
@@ -166,10 +166,10 @@ export default function Header() {
         </div>
         <input type="submit" value="login now" className="btn" />
         <p>
-          forget password <a href="/">click here</a>
+          forget password? <a href={URL.HOME}>click here</a>
         </p>
         <p>
-          don't have an account?<a href="/">Create account</a>
+          don't have an account?<a href={URL.HOME}>Create account</a>
         </p>
       </form>
     </header>

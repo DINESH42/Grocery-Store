@@ -7,6 +7,7 @@ import imggallery3 from "../../assests/image/gallery-img-3.jpg";
 import imggallery4 from "../../assests/image/gallery-img-4.jpg";
 import imggallery5 from "../../assests/image/gallery-img-5.jpg";
 import imggallery6 from "../../assests/image/gallery-img-6.jpg";
+import { URL } from "../../constants";
 
 export default function About() {
   return (
@@ -14,7 +15,7 @@ export default function About() {
       <div className="heading">
         <h1>about us</h1>
         <p>
-          <a href="#">Home {">>"}</a>about
+          <a href={URL.HOMW}>Home {">>"}</a>about
         </p>
       </div>
       <section className="about">
@@ -35,7 +36,7 @@ export default function About() {
             cumque molestiae blanditiis deleniti aspernatur, ab tempora quisquam
             sapiente commodi hic.
           </p>
-          <a href="#" className="btn">
+          <a href={URL.ABOUT} className="btn">
             read more
           </a>
         </div>
@@ -48,49 +49,49 @@ export default function About() {
           <div className="box">
             <img src={imggallery1} alt="" />
             <div className="icons">
-              <a href="#" className="fas fa-eye"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-share-alt"></a>
+              <i className="fas fa-eye"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-share-alt"></i>
             </div>
           </div>
           <div className="box">
             <img src={imggallery2} alt="" />
             <div className="icons">
-              <a href="#" className="fas fa-eye"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-share-alt"></a>
+              <i className="fas fa-eye"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-share-alt"></i>
             </div>
           </div>
           <div className="box">
             <img src={imggallery3} alt="" />
             <div className="icons">
-              <a href="#" className="fas fa-eye"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-share-alt"></a>
+              <i className="fas fa-eye"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-share-alt"></i>
             </div>
           </div>
           <div className="box">
             <img src={imggallery4} alt="" />
             <div className="icons">
-              <a href="#" className="fas fa-eye"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-share-alt"></a>
+              <i className="fas fa-eye"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-share-alt"></i>
             </div>
           </div>
           <div className="box">
             <img src={imggallery5} alt="" />
             <div className="icons">
-              <a href="#" className="fas fa-eye"></a>
-              <a href="/" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-share-alt"></a>
+              <i className="fas fa-eye"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-share-alt"></i>
             </div>
           </div>
           <div className="box">
             <img src={imggallery6} alt="" />
             <div className="icons">
-              <a href="#" className="fas fa-eye"></a>
-              <a href="#" className="fas fa-heart"></a>
-              <a href="#" className="fas fa-share-alt"></a>
+              <i className="fas fa-eye"></i>
+              <i className="fas fa-heart"></i>
+              <i className="fas fa-share-alt"></i>
             </div>
           </div>
         </div>

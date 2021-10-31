@@ -143,7 +143,7 @@ section {
 .products .box-container .box:hover .icons {
   top: 0;
 }
-.products .box-container .box .icons a {
+.products .box-container .box .icons i {
   font-size: 2rem;
   height: 5rem;
   width: 5rem;
@@ -152,9 +152,10 @@ section {
   box-shadow: var(---box-shadow);
   color: var(---light-color);
 }
-.products .box-container .box .icons a:hover {
+.products .box-container .box .icons i:hover {
   background: var(--green);
   color: var(---white);
+  cursor: pointer;
 }
 
 .products .box-container .box .images {

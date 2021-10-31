@@ -62,6 +62,7 @@ section {
 .heading p a:hover {
   color: var(--green);
 }
+
 .contact .contact-container {
   width: 100%;
   display: flex;

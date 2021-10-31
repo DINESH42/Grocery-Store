@@ -1,5 +1,6 @@
 import React from "react";
 import "./ContactUs.css";
+import { URL } from "../../constants";
 
 export default function ContactUs() {
   return (
@@ -7,7 +8,7 @@ export default function ContactUs() {
       <div className="heading">
         <h1>contact us</h1>
         <p>
-          <a href="#">Home{">>"}</a>Contact
+          <a href={URL.HOME}>Home{">>"}</a>Contact
         </p>
       </div>
       <section className="contact">

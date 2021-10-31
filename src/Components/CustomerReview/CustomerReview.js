@@ -9,6 +9,7 @@ import user3 from "../../assests/image/pic-3.png";
 import user4 from "../../assests/image/pic-4.png";
 import user5 from "../../assests/image/pic-5.png";
 import user6 from "../../assests/image/pic-6.png";
+import { URL } from "../../constants";
 
 export default function CustomerReview() {
   return (
@@ -16,7 +17,7 @@ export default function CustomerReview() {
       <div className="heading">
         <h1>Customer's review</h1>
         <p>
-          <a href="#">Home {">>"}</a>review
+          <a href={URL.HOME}>Home {">>"}</a>review
         </p>
       </div>
       <section className="info-container">

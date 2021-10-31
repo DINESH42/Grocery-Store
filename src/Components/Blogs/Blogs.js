@@ -6,6 +6,7 @@ import blogs3 from "../../assests/image/blog-3.jpg";
 import blogs4 from "../../assests/image/blog-4.jpg";
 import blogs5 from "../../assests/image/blog-5.jpg";
 import blogs6 from "../../assests/image/blog-6.jpg";
+import { URL } from "../../constants";
 
 export default function Blogs() {
   return (
@@ -13,7 +14,7 @@ export default function Blogs() {
       <div className="heading">
         <h1>our Blogs</h1>
         <p>
-          <a href="#">Home{">>"}</a>blogs
+          <a href={URL.HOME}>Home{">>"}</a>blogs
         </p>
       </div>
       <section className="blogs">
@@ -27,16 +28,16 @@ export default function Blogs() {
             </div>
             <div className="content">
               <div className="icons">
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-calendar"></i>21st May,2021
                 </a>
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-user"></i>User Name
                 </a>
               </div>
               <h3>blogs title goes here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" className="btn">
+              <a href={URL.BLOGS} className="btn">
                 read more
               </a>
             </div>
@@ -47,16 +48,16 @@ export default function Blogs() {
             </div>
             <div className="content">
               <div className="icons">
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-calendar"></i>21st May,2021
                 </a>
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-user"></i>User Name
                 </a>
               </div>
               <h3>blogs title goes here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" className="btn">
+              <a href={URL.BLOGS} className="btn">
                 read more
               </a>
             </div>
@@ -67,16 +68,16 @@ export default function Blogs() {
             </div>
             <div className="content">
               <div className="icons">
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-calendar"></i>21st May,2021
                 </a>
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-user"></i>User Name
                 </a>
               </div>
               <h3>blogs title goes here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" className="btn">
+              <a href={URL.BLOGS} className="btn">
                 read more
               </a>
             </div>
@@ -87,16 +88,16 @@ export default function Blogs() {
             </div>
             <div className="content">
               <div className="icons">
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-calendar"></i>21st May,2021
                 </a>
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-user"></i>User Name
                 </a>
               </div>
               <h3>blogs title goes here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" className="btn">
+              <a href={URL.BLOGS} className="btn">
                 read more
               </a>
             </div>
@@ -107,16 +108,16 @@ export default function Blogs() {
             </div>
             <div className="content">
               <div className="icons">
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-calendar"></i>21st May,2021
                 </a>
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-user"></i>User Name
                 </a>
               </div>
               <h3>blogs title goes here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" className="btn">
+              <a href={URL.BLOGS} className="btn">
                 read more
               </a>
             </div>
@@ -127,16 +128,16 @@ export default function Blogs() {
             </div>
             <div className="content">
               <div className="icons">
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-calendar"></i>21st May,2021
                 </a>
-                <a href="/">
+                <a href={URL.BLOGS}>
                   <i className="fas fa-user"></i>User Name
                 </a>
               </div>
               <h3>blogs title goes here</h3>
               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-              <a href="" className="btn">
+              <a href={URL.BLOGS} className="btn">
                 read more
               </a>
             </div>
