@@ -12,20 +12,24 @@ export default function Header() {
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
+    let signup = document.querySelector(".signup-form");
     searchForm.classList.toggle("active");
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
     navbar.classList.remove("active");
+    signup.classList.remove("active");
   };
   const onShoppingCart = () => {
     let shoppingCart = document.querySelector(".shopping-cart");
     let searchForm = document.querySelector(".search-form");
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
+    let signup = document.querySelector(".signup-form");
     shoppingCart.classList.toggle("active");
     searchForm.classList.remove("active");
     login.classList.remove("active");
     navbar.classList.remove("active");
+    signup.classList.remove("active");
   };
 
   const onLoginClick = () => {
@@ -34,10 +38,11 @@ export default function Header() {
     let shoppingCart = document.querySelector(".shopping-cart");
     let navbar = document.querySelector(".navbar");
     login.classList.toggle("active");
-
+    let signup = document.querySelector(".signup-form");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
     navbar.classList.remove("active");
+    signup.classList.remove("active");
   };
 
   const onMenubar = () => {
@@ -45,7 +50,22 @@ export default function Header() {
     let searchForm = document.querySelector(".search-form");
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
+    let signup = document.querySelector(".signup-form");
     navbar.classList.toggle("active");
+    searchForm.classList.remove("active");
+    shoppingCart.classList.remove("active");
+    login.classList.remove("active");
+    signup.classList.remove("active");
+  };
+
+  const onSignup = () => {
+    let signup = document.querySelector(".signup-form");
+    let navbar = document.querySelector(".navbar");
+    let searchForm = document.querySelector(".search-form");
+    let shoppingCart = document.querySelector(".shopping-cart");
+    let login = document.querySelector(".login-form");
+    signup.classList.toggle("active");
+    navbar.classList.remove("active");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
@@ -56,6 +76,8 @@ export default function Header() {
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
+    let signup = document.querySelector(".signup-form");
+    signup.classList.remove("active");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
@@ -164,12 +186,52 @@ export default function Header() {
           <input type="checkbox" name="" id="remember-me" />
           <label if="remember-me">remember me</label>
         </div>
-        <input type="submit" value="login now" className="btn" />
+        <input type="submit" value="login" className="btn" />
         <p>
-          forget password? <a href={URL.HOME}>click here</a>
+          forget password? <span>click here</span>
         </p>
         <p>
-          don't have an account?<a href={URL.HOME}>Create account</a>
+          don't have an account?
+          <span
+            onClick={() => {
+              onSignup();
+            }}
+          >
+            Create account
+          </span>
+        </p>
+      </form>
+      <form action="" className="signup-form">
+        <h3>Sign</h3>
+        <input
+          type="email"
+          name="name"
+          ie=""
+          placeholder="Enter your email"
+          className="box"
+        />
+        <input
+          type="password"
+          name="password"
+          ie=""
+          placeholder="Password"
+          className="box"
+        />
+        <input
+          type="password"
+          name="password"
+          ie=""
+          placeholder="Confirm password"
+          className="box"
+        />
+        <div className="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label if="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="signUp" className="btn" />
+        <p>
+          already have an account?
+          <span onClick={() => onLoginClick()}>login account</span>
         </p>
       </form>
     </header>
