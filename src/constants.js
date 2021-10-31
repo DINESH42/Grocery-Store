@@ -8,7 +8,6 @@ export const URL = {
   FRUITS: SERVICE_NAME + "shops/fruits",
   VEGITABLES: SERVICE_NAME + "shops/vegitables",
   SPICES: SERVICE_NAME + "shops/spices",
-  MEAT: SERVICE_NAME + "shops/meat",
   WHEAT: SERVICE_NAME + "shops/wheat",
   ABOUT: SERVICE_NAME + "about",
   REVIEW: SERVICE_NAME + "review",

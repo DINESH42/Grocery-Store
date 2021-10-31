@@ -94,7 +94,7 @@ section {
   /* gap: 1.5rem; */
 }
 .category .box-container .box {
-  width: 20%;
+  width: 25%;
   text-align: center;
 }
 .category .box-container .box img {
@@ -206,7 +206,7 @@ section {
     gap: 3rem;
   }
   .products .box-container .box {
-    width: 30%;
+    width: 33.33%;
   }
   .category .box-container .box {
     width: 25%;

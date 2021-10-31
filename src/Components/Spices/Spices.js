@@ -5,6 +5,8 @@ import spices1 from "../../assests/image/spices-1.jpg";
 import spices2 from "../../assests/image/spices-2.jpg";
 import spices3 from "../../assests/image/spices-3.jpg";
 import spices4 from "../../assests/image/spices-4.jpg";
+import spices5 from "../../assests/image/spices-5.jpg";
+import spices6 from "../../assests/image/spices-6.jpg";
 
 export default function Spices() {
   return (
@@ -43,6 +45,18 @@ export default function Spices() {
           </div>
           <div className="box">
             <img src={spices4} alt="" />
+            <div className="icons">
+              <span>organic spices</span>
+            </div>
+          </div>
+          <div className="box">
+            <img src={spices5} alt="" />
+            <div className="icons">
+              <span>organic spices</span>
+            </div>
+          </div>
+          <div className="box">
+            <img src={spices6} alt="" />
             <div className="icons">
               <span>organic spices</span>
             </div>

@@ -4,11 +4,10 @@ import { URL } from "../../constants";
 import imgcategory1 from "../../assests/image/cat-1.png";
 import imgcategory2 from "../../assests/image/cat-2.png";
 import imgcategory3 from "../../assests/image/cat-3.png";
-import imgcategory4 from "../../assests/image/cat-4.png";
 import imgcategory5 from "../../assests/image/cat-5.png";
 import imgProduct1 from "../../assests/image/product-1.jpg";
 import imgProduct2 from "../../assests/image/product-2.jpg";
-import imgProduct3 from "../../assests/image/product-3.jpg";
+import imgProduct3 from "../../assests/image/product-5.jpg";
 import imgProduct4 from "../../assests/image/product-4.jpg";
 import imgProduct5 from "../../assests/image/product-5.jpg";
 import imgProduct6 from "../../assests/image/product-6.jpg";
@@ -40,10 +39,6 @@ export default function Shops() {
           <a href={URL.SPICES} className="box">
             <img src={imgcategory3} alt="" />
             <h3>organic spices</h3>
-          </a>
-          <a href={URL.MEAT} className="box">
-            <img src={imgcategory4} alt="" />
-            <h3>fresh meat</h3>
           </a>
           <a href={URL.WHEAT} className="box">
             <img src={imgcategory5} alt="" />

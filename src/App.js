@@ -12,7 +12,6 @@ import ContactUs from "./Components/ContactUs/ContactUs";
 import FreshFruits from "./Components/FreshFruits/FreshFruits";
 import Vegitables from "./Components/Vegitables/Vegitables";
 import Spices from "./Components/Spices/Spices";
-import Meat from "./Components/Meat/Meat";
 import Wheat from "./Components/Wheat/Wheat";
 
 function App() {
@@ -29,7 +28,6 @@ function App() {
         <Route path={URL.FRUITS} component={FreshFruits} />
         <Route path={URL.VEGITABLES} component={Vegitables} />
         <Route path={URL.SPICES} component={Spices} />
-        <Route path={URL.MEAT} component={Meat} />
         <Route path={URL.WHEAT} component={Wheat} />
         <Route path={URL.HOME} component={Footer} />
       </BrowserRouter>
