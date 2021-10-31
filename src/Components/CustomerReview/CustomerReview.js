@@ -53,10 +53,10 @@ export default function CustomerReview() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
-            sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae
-            reprehenderit tempore eligendi, eum quibusdam perferendis dicta,
-            incidunt dolores nemo ex.
+            This is the best local independently owned health food store in
+            Santa Cruz county. They will have the best prices and you will be
+            able to find the most unique hard to find items here as well. You
+            will feel much better supporting a local company
           </p>
         </div>
         <div className="box">
@@ -68,10 +68,10 @@ export default function CustomerReview() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
-            sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae
-            reprehenderit tempore eligendi, eum quibusdam perferendis dicta,
-            incidunt dolores nemo ex.
+            This is the best local independently owned health food store in
+            Santa Cruz county. They will have the best prices and you will be
+            able to find the most unique hard to find items here as well. You
+            will feel much better supporting a local company
           </p>
         </div>
         <div className="box">
@@ -83,10 +83,10 @@ export default function CustomerReview() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
-            sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae
-            reprehenderit tempore eligendi, eum quibusdam perferendis dicta,
-            incidunt dolores nemo ex.
+            This is the best local independently owned health food store in
+            Santa Cruz county. They will have the best prices and you will be
+            able to find the most unique hard to find items here as well. You
+            will feel much better supporting a local company
           </p>
         </div>
         <div className="box">
@@ -98,10 +98,10 @@ export default function CustomerReview() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
-            sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae
-            reprehenderit tempore eligendi, eum quibusdam perferendis dicta,
-            incidunt dolores nemo ex.
+            This is the best local independently owned health food store in
+            Santa Cruz county. They will have the best prices and you will be
+            able to find the most unique hard to find items here as well. You
+            will feel much better supporting a local company
           </p>
         </div>
         <div className="box">
@@ -113,10 +113,10 @@ export default function CustomerReview() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
-            sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae
-            reprehenderit tempore eligendi, eum quibusdam perferendis dicta,
-            incidunt dolores nemo ex.
+            This is the best local independently owned health food store in
+            Santa Cruz county. They will have the best prices and you will be
+            able to find the most unique hard to find items here as well. You
+            will feel much better supporting a local company
           </p>
         </div>
         <div className="box">
@@ -128,10 +128,10 @@ export default function CustomerReview() {
             </div>
           </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae vel
-            sequi nostrum quae nobis non quaerat nisi voluptatibus recusandae
-            reprehenderit tempore eligendi, eum quibusdam perferendis dicta,
-            incidunt dolores nemo ex.
+            This is the best local independently owned health food store in
+            Santa Cruz county. They will have the best prices and you will be
+            able to find the most unique hard to find items here as well. You
+            will feel much better supporting a local company
           </p>
         </div>
       </section>

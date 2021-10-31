@@ -148,6 +148,7 @@ section {
   height: 5rem;
   width: 5rem;
   line-height: 5rem;
+  border-radius: 50%;
   background: var(---white);
   box-shadow: var(---box-shadow);
   color: var(---light-color);
