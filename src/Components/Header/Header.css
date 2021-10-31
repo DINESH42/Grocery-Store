@@ -396,26 +396,20 @@ html {
   width: 100%;
   text-align: center;
 }
-.header .forget-password .signup-login {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 0 6rem;
-  justify-content: space-between;
+.header .forget-password p {
   color: var(---light-color);
   padding-top: 1rem;
   font-size: 1.4rem;
 }
 
-.header .forget-password .signup-login span {
+.header .forget-password p span {
   color: var(--green);
   margin-left: 1rem;
 }
-.header .forget-password .signup-login span:hover {
+.header .forget-password p span:hover {
   text-decoration: underline;
   cursor: pointer;
 }
-
 #menu-bar {
   display: none;
 }

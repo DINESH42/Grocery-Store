@@ -29,23 +29,23 @@ export default function Shops() {
           our <span>category</span> <a href={URL.SHOPS}>View all {">>"}</a>
         </h1>
         <div className="box-container">
-          <a href={URL.SHOPS} className="box">
+          <a href={URL.FRUITS} className="box">
             <img src={imgcategory1} alt="" />
             <h3>fresh fruits</h3>
           </a>
-          <a href={URL.SHOPS} className="box">
+          <a href={URL.VEGITABLES} className="box">
             <img src={imgcategory2} alt="" />
             <h3>vegetables</h3>
           </a>
-          <a href={URL.SHOPS} className="box">
+          <a href={URL.SPICES} className="box">
             <img src={imgcategory3} alt="" />
             <h3>organic spices</h3>
           </a>
-          <a href={URL.SHOPS} className="box">
+          <a href={URL.MEAT} className="box">
             <img src={imgcategory4} alt="" />
             <h3>fresh meat</h3>
           </a>
-          <a href={URL.SHOPS} className="box">
+          <a href={URL.WHEAT} className="box">
             <img src={imgcategory5} alt="" />
             <h3>organic wheat</h3>
           </a>

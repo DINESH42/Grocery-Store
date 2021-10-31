@@ -304,9 +304,8 @@ export default function Header() {
           className="box"
         />
         <input type="submit" value="forget passord" className="btn" />
-        <p className="signup-login">
-          <span onClick={() => onLoginClick()}>login account</span>
-          <span onClick={() => onSignup()}>signup account</span>
+        <p>
+          <span onClick={() => onLoginClick()}>Go back to login</span>
         </p>
       </form>
     </header>
