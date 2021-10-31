@@ -110,6 +110,11 @@ export default function Header() {
     navbar.classList.remove("active");
   };
 
+  const oncloseFrgtBtn = () => {
+    let forget = document.querySelector(".forget-password");
+    forget.classList.remove("active");
+  };
+
   console.log("header value: ", Headers);
 
   return (
@@ -268,19 +273,27 @@ export default function Header() {
         </p>
       </form>
       <form action="" className="forget-password">
-        <h3>Forget Password</h3>
+        <span>
+          <h3>Forget Password</h3>
+          <i
+            class="fas fa-times"
+            onClick={() => {
+              oncloseFrgtBtn();
+            }}
+          ></i>
+        </span>
         <input
           type="email"
           name="name"
           ie=""
-          placeholder="Enter your email"
+          placeholder="Username"
           className="box"
         />
         <input
           type="password"
           name="password"
           ie=""
-          placeholder="Password"
+          placeholder="New Password"
           className="box"
         />
         <input
