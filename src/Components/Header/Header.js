@@ -13,11 +13,13 @@ export default function Header() {
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
     let signup = document.querySelector(".signup-form");
+    let forget = document.querySelector(".forget-password");
     searchForm.classList.toggle("active");
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
     navbar.classList.remove("active");
     signup.classList.remove("active");
+    forget.classList.remove("active");
   };
   const onShoppingCart = () => {
     let shoppingCart = document.querySelector(".shopping-cart");
@@ -25,11 +27,13 @@ export default function Header() {
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
     let signup = document.querySelector(".signup-form");
+    let forget = document.querySelector(".forget-password");
     shoppingCart.classList.toggle("active");
     searchForm.classList.remove("active");
     login.classList.remove("active");
     navbar.classList.remove("active");
     signup.classList.remove("active");
+    forget.classList.remove("active");
   };
 
   const onLoginClick = () => {
@@ -38,11 +42,13 @@ export default function Header() {
     let shoppingCart = document.querySelector(".shopping-cart");
     let navbar = document.querySelector(".navbar");
     login.classList.toggle("active");
+    let forget = document.querySelector(".forget-password");
     let signup = document.querySelector(".signup-form");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
     navbar.classList.remove("active");
     signup.classList.remove("active");
+    forget.classList.remove("active");
   };
 
   const onMenubar = () => {
@@ -51,11 +57,13 @@ export default function Header() {
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
     let signup = document.querySelector(".signup-form");
+    let forget = document.querySelector(".forget-password");
     navbar.classList.toggle("active");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
     signup.classList.remove("active");
+    forget.classList.remove("active");
   };
 
   const onSignup = () => {
@@ -64,11 +72,13 @@ export default function Header() {
     let searchForm = document.querySelector(".search-form");
     let shoppingCart = document.querySelector(".shopping-cart");
     let login = document.querySelector(".login-form");
+    let forget = document.querySelector(".forget-password");
     signup.classList.toggle("active");
     navbar.classList.remove("active");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
+    forget.classList.remove("active");
   };
 
   window.onscroll = () => {
@@ -77,6 +87,22 @@ export default function Header() {
     let login = document.querySelector(".login-form");
     let navbar = document.querySelector(".navbar");
     let signup = document.querySelector(".signup-form");
+    let forget = document.querySelector(".forget-password");
+    signup.classList.remove("active");
+    searchForm.classList.remove("active");
+    shoppingCart.classList.remove("active");
+    login.classList.remove("active");
+    navbar.classList.remove("active");
+    forget.classList.remove("active");
+  };
+  const onForgetBtn = () => {
+    let forget = document.querySelector(".forget-password");
+    let searchForm = document.querySelector(".search-form");
+    let shoppingCart = document.querySelector(".shopping-cart");
+    let login = document.querySelector(".login-form");
+    let navbar = document.querySelector(".navbar");
+    let signup = document.querySelector(".signup-form");
+    forget.classList.toggle("active");
     signup.classList.remove("active");
     searchForm.classList.remove("active");
     shoppingCart.classList.remove("active");
@@ -188,7 +214,14 @@ export default function Header() {
         </div>
         <input type="submit" value="login" className="btn" />
         <p>
-          forget password? <span>click here</span>
+          forget password?
+          <span
+            onClick={() => {
+              onForgetBtn();
+            }}
+          >
+            click here
+          </span>
         </p>
         <p>
           don't have an account?
@@ -232,6 +265,35 @@ export default function Header() {
         <p>
           already have an account?
           <span onClick={() => onLoginClick()}>login account</span>
+        </p>
+      </form>
+      <form action="" className="forget-password">
+        <h3>Forget Password</h3>
+        <input
+          type="email"
+          name="name"
+          ie=""
+          placeholder="Enter your email"
+          className="box"
+        />
+        <input
+          type="password"
+          name="password"
+          ie=""
+          placeholder="Password"
+          className="box"
+        />
+        <input
+          type="password"
+          name="password"
+          ie=""
+          placeholder="Confirm password"
+          className="box"
+        />
+        <input type="submit" value="forget passord" className="btn" />
+        <p className="signup-login">
+          <span onClick={() => onLoginClick()}>login account</span>
+          <span onClick={() => onSignup()}>signup account</span>
         </p>
       </form>
     </header>

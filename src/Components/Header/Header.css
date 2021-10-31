@@ -326,6 +326,76 @@ html {
   cursor: pointer;
 }
 
+/* Forget password */
+
+.header .forget-password {
+  position: absolute;
+  top: 115%;
+  right: -105%;
+  background: var(---white);
+  border-radius: 0.5rem;
+  box-shadow: var(---box-shadow);
+  width: 45rem;
+  padding: 2rem;
+}
+.header .forget-password.active {
+  right: 2rem;
+  transition: 0.4s linear;
+}
+.header .forget-password h3 {
+  color: var(--black);
+  text-transform: uppercase;
+  font-size: 2.2rem;
+  text-align: center;
+  margin-bottom: 0.7rem;
+}
+.header .forget-password .box {
+  margin: 2rem 0;
+  border: var(---border);
+  padding: 1rem 1.2rem;
+  font-size: 1.5rem;
+  color: var(--black);
+  text-transform: none;
+  width: 100%;
+}
+
+.header .forget-password .remember {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 1.5rem 0;
+}
+.header .forget-password .remember label {
+  font-size: 1.5rem;
+  color: var(---light-color);
+  cursor: pointer;
+}
+
+.header .forget-password .btn {
+  margin: 2rem 0;
+  width: 100%;
+  text-align: center;
+}
+.header .forget-password .signup-login {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 6rem;
+  justify-content: space-between;
+  color: var(---light-color);
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.header .forget-password .signup-login span {
+  color: var(--green);
+  margin-left: 1rem;
+}
+.header .forget-password .signup-login span:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
 #menu-bar {
   display: none;
 }
