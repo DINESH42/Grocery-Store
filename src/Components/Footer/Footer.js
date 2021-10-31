@@ -44,7 +44,7 @@ export default function Footer() {
               <i className="fas fa-arrow-right"></i>My account
             </a>
             <a href={URL.HOME}>
-              <i className="fas fa-arrow-right"></i>term or use
+              <i className="fas fa-arrow-right"></i>term of use
             </a>
           </div>
           <div className="box">
