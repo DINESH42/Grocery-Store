@@ -235,7 +235,7 @@ export default function Header() {
         </p>
       </form>
       <form action="" className="signup-form">
-        <h3>Sign</h3>
+        <h3>SignUp</h3>
         <input
           type="email"
           name="name"
