@@ -127,11 +127,15 @@ section {
   .home #next-slide,
   .home #prev-slide {
     transform: translateY(0);
-    top: 88%;
+    top: 92%;
   }
   .home #prev-slide {
     left: auto;
-    right: 8rem;
+    right: 51%;
+  }
+  .home #next-slide {
+    right: auto;
+    left: 51%;
   }
 }
 
