@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Spices.css";
 import { URL } from "../../constants";
 import spices1 from "../../assests/image/spices-1.jpg";
@@ -7,8 +7,13 @@ import spices3 from "../../assests/image/spices-3.jpg";
 import spices4 from "../../assests/image/spices-4.jpg";
 import spices5 from "../../assests/image/spices-5.jpg";
 import spices6 from "../../assests/image/spices-6.jpg";
+import { AppContext } from "../ContextFile/Context2";
 
-export default function Spices() {
+export default function Spices(props) {
+  const { fname } = useContext(AppContext);
+
+  console.log("fname :", fname);
+
   return (
     <div>
       <div className="heading">

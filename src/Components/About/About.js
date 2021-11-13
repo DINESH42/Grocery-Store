@@ -15,7 +15,7 @@ export default function About() {
       <div className="heading">
         <h1>about us</h1>
         <p>
-          <a href={URL.HOMW}>Home {">>"}</a>about
+          <a href={URL.HOME}>Home {">>"}</a>about
         </p>
       </div>
       <section className="about">

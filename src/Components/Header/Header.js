@@ -276,7 +276,7 @@ export default function Header() {
         <span>
           <h3>Forget Password</h3>
           <i
-            class="fas fa-times"
+            className="fas fa-times"
             onClick={() => {
               oncloseFrgtBtn();
             }}
