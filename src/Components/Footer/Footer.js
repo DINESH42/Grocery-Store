@@ -1,6 +1,11 @@
 import React from "react";
 import "./Footer.css";
 import payment from "../../assests/image/payment.png";
+import Card from "../../assests/image/CardPayment.jpg";
+import upiPay from "../../assests/image/UPIPay.png";
+import phonePay from "../../assests/image/PhonePay.png";
+import googlePay from "../../assests/image/GooglePay.png";
+import amazonPay from "../../assests/image/AmazonPAy.png";
 import { URL } from "../../constants";
 
 export default function Footer() {
@@ -70,6 +75,28 @@ export default function Footer() {
               <input type="submit" value="subscribe" className="btn" />
             </form>
             <img src={payment} alt="" className="payment" />
+            {/* <nav className="payNavbar">
+              <a href={URL.HOME}>
+                Card
+                <img src={Card} alt="card"></img>
+              </a>
+              <a href={URL.ABOUT}>
+                UPI
+                <img src={upiPay} alt="upi"></img>
+              </a>
+              <a href={URL.REVIEW}>
+                PhonePay
+                <img src={phonePay} alt="PhonePay"></img>
+              </a>
+              <a href={URL.REVIEW}>
+                GoogePay
+                <img src={googlePay} alt="GoogePay"></img>
+              </a>
+              <a href={URL.SHOPS}>
+                AmazonPay
+                <img src={amazonPay} alt="AmazonPay"></img>
+              </a>
+            </nav> */}
           </div>
         </div>
       </section>

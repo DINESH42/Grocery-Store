@@ -83,6 +83,33 @@ section {
   margin-top: 2rem;
 }
 
+.footer .box-container .box .payNavbar {
+  width: 100%;
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: fit-content;
+  justify-content: space-between;
+}
+.footer .box-container .box .payNavbar a {
+  background: rgb(241, 240, 240);
+  color: #222;
+  margin: 0.5rem 0rem;
+  padding: 0rem 0.7rem;
+  cursor: pointer;
+}
+
+.footer .box-container .box .payNavbar a img {
+  display: none;
+  width: 50px;
+  height: 15px;
+}
+
+.footer .box-container .box .payNavbar a:hover img {
+  display: block;
+}
+
 .credit {
   text-align: center;
   background: var(--green);
