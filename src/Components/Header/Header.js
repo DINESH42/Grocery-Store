@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import { useHistory } from "react-router-dom";
 import { URL } from "../../constants";
 import Cart1 from "../../assests/image/cart-1.jpg";
 import Cart2 from "../../assests/image/cart-2.jpg";
@@ -7,6 +8,8 @@ import Cart3 from "../../assests/image/cart-3.jpg";
 import Headers from "./Header.json";
 
 export default function Header() {
+  const history = useHistory();
+
   const onSearchClick = () => {
     let searchForm = document.querySelector(".search-form");
     let shoppingCart = document.querySelector(".shopping-cart");
@@ -115,6 +118,10 @@ export default function Header() {
     forget.classList.remove("active");
   };
 
+  const onLoginUser = () => {
+    history.push(URL.USER_PROFILE);
+  };
+
   console.log("header value: ", Headers);
 
   return (
@@ -217,7 +224,9 @@ export default function Header() {
           <input type="checkbox" name="" id="remember-me" />
           <label if="remember-me">remember me</label>
         </div>
-        <input type="submit" value="login" className="btn" />
+        <button onClick={() => onLoginUser()} className="btn">
+          Login
+        </button>
         <p>
           forget password?
           <span

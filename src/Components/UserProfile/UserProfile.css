@@ -1,0 +1,125 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+}
+
+:root {
+  --green: #bac34e;
+  --black: #222;
+  ---white: #fff;
+  ---light-color: #666;
+  ---light-bg: #f3f3f3;
+  ---border: 0.1rem solid rgba(0, 0, 0, 0.1);
+  ---box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  ---border-radus: 15px;
+}
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.main_container {
+  width: 100%;
+  height: 100%;
+  margin-top: 10rem;
+}
+
+.main_container .userProfile {
+  margin: 5rem 8rem;
+  padding: 2rem 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: var(---border);
+  border-radius: var(---border-radus);
+}
+
+.main_container .userProfile img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 15px;
+  transition: 0.5s;
+}
+
+.main_container .userProfile img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.main_container .userProfile .userName_section {
+  font-size: 14px;
+  align-content: center;
+}
+.main_container .userProfile .userName_section span {
+  font-weight: bold;
+}
+.main_container .userProfile .userName_section p:hover {
+  cursor: pointer;
+  color: var(--green);
+}
+
+.main_container .userDetails {
+  margin: 5rem 8rem;
+  padding: 2rem 8rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  border: var(---border);
+  border-radius: var(---border-radus);
+}
+
+.main_container .userDetails .rowDetails {
+  display: flex;
+  flex-direction: column;
+  margin: 0rem 1rem;
+  padding: 0rem 1rem;
+}
+
+.main_container .userDetails .rowDetails label {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.main_container .userDetails .rowDetails input {
+  border: var(---border);
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+.main_container .forgetpassword {
+  margin: 5rem 8rem;
+  display: flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+}
+
+.main_container .forgetpassword .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  background: var(--green);
+  color: var(---white);
+  font-size: 1.7rem;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.main_container .forgetpassword .btn:hover {
+  background: var(--black);
+}

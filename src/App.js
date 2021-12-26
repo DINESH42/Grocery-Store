@@ -13,6 +13,7 @@ import FreshFruits from "./Components/FreshFruits/FreshFruits";
 import Vegitables from "./Components/Vegitables/Vegitables";
 import Spices from "./Components/Spices/Spices";
 import Wheat from "./Components/Wheat/Wheat";
+import UserProfile from "./Components/UserProfile/UserProfile";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
       <BrowserRouter>
         <Route path={URL.HOME} component={Header} />
         <Route exact path={URL.HOME} component={Dashboard} />
+        <Route exact path={URL.USER_PROFILE} component={UserProfile} />
         <Route exact path={URL.SHOPS} component={Shops} />
         <Route path={URL.ABOUT} component={About} />
         <Route path={URL.REVIEW} component={CustomerReview} />
