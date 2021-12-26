@@ -124,8 +124,21 @@ export default function Header() {
 
   console.log("header value: ", Headers);
 
+  window.onscroll = () => {
+    let navbar1 = document.querySelector(".navbar");
+    navbar1.classList.remove("active");
+
+    if (window.scrollY > 60) {
+      document.querySelector("#scroll-top").classList.add("active");
+    } else {
+      document.querySelector("#scroll-top").classList.remove("active");
+    }
+  };
+
   return (
     <header className="header">
+      <a href={URL.HOME} className="fas fa-angle-up" id="scroll-top"></a>
+
       <a href={URL.HOME} className="logo">
         <i className="fas fa-shopping-basket"></i> Grocery
       </a>

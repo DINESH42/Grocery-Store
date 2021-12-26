@@ -415,6 +415,23 @@ html {
   display: none;
 }
 
+#scroll-top {
+  position: fixed;
+  top: -120%;
+  right: 2rem;
+  padding: 0.5rem 1.5rem;
+  font-size: 4rem;
+  background: var(--green);
+  color: var(---white);
+  border-radius: 0.5rem;
+  transition: 1s linear;
+  z-index: 1000;
+}
+
+#scroll-top.active {
+  top: calc(100% - 12rem);
+}
+
 /* Media queries */
 
 @media (max-width: 1210px) {
