@@ -2,8 +2,12 @@ import React from "react";
 import "./UserProfile.css";
 // import user_Profile_back from "../../assests/image/profile_2.png";
 import user_Profile from "../../assests/image/userProfile.jpg";
+import { URL } from "../../constants";
+import { useHistory } from "react-router-dom";
 
 export default function UserProfile() {
+  const history = useHistory();
+
   const onForgetPassword = () => {
     let forget = document.querySelector(".forget-password");
     let searchForm = document.querySelector(".search-form");
@@ -17,6 +21,22 @@ export default function UserProfile() {
     shoppingCart.classList.remove("active");
     login.classList.remove("active");
     navbar.classList.remove("active");
+  };
+
+  const onSignOut = () => {
+    let forget = document.querySelector(".forget-password");
+    let searchForm = document.querySelector(".search-form");
+    let shoppingCart = document.querySelector(".shopping-cart");
+    let login = document.querySelector(".login-form");
+    let navbar = document.querySelector(".navbar");
+    let signup = document.querySelector(".signup-form");
+    forget.classList.remove("active");
+    signup.classList.remove("active");
+    searchForm.classList.remove("active");
+    shoppingCart.classList.remove("active");
+    login.classList.remove("active");
+    navbar.classList.remove("active");
+    history.push(URL.HOME);
   };
 
   return (
@@ -54,6 +74,14 @@ export default function UserProfile() {
           }}
         >
           Forget Password
+        </button>
+        <button
+          className="btn"
+          onClick={() => {
+            onSignOut();
+          }}
+        >
+          Sign Out
         </button>
       </div>
     </div>
