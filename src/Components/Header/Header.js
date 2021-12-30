@@ -1,14 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.css";
-import { useHistory } from "react-router-dom";
+import { useHistory, Link } from "react-router-dom";
 import { URL } from "../../constants";
 import Cart1 from "../../assests/image/cart-1.jpg";
 import Cart2 from "../../assests/image/cart-2.jpg";
 import Cart3 from "../../assests/image/cart-3.jpg";
 import Headers from "./Header.json";
+import { useSelector, useDispatch } from "react-redux";
+import { SignUpUserAction } from "../../BackendCalls/Actions/SignUpUserAction";
 
 export default function Header() {
   const history = useHistory();
+  const dispatch = useDispatch();
+
+  const LoginUser = useSelector((state) => state.LoginUser);
+  const SignUpUser = useSelector((state) => state.SignUpUser);
+  console.log("Login User :- ", LoginUser);
+  console.log("SignUp User :- ", SignUpUser);
+
+  const initSignUp = {
+    email: "",
+    password: "",
+    confirmPassword: "",
+  };
+
+  const [signUser, setSignUser] = useState(initSignUp);
+
+  const onChangeSignUp = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    setSignUser({
+      ...signUser,
+      [name]: value,
+    });
+  };
+
+  const onSignUpAction = () => {
+    dispatch(SignUpUserAction(signUser));
+    console.log("signUser :", signUser);
+  };
 
   const onSearchClick = () => {
     let searchForm = document.querySelector(".search-form");
@@ -124,19 +154,19 @@ export default function Header() {
 
   console.log("header value: ", Headers);
 
-  window.onscroll = () => {
-    // let navbar1 = document.querySelector(".navbar");
-    // navbar1.classList.remove("active");
-    if (window.scrollY > 60) {
-      document.querySelector("#scroll-top").classList.add("active");
-    } else {
-      document.querySelector("#scroll-top").classList.remove("active");
-    }
-  };
+  // window.onscroll = () => {
+  //   // let navbar1 = document.querySelector(".navbar");
+  //   // navbar1.classList.remove("active");
+  // if (window.scrollY > 60) {
+  //   document.querySelector("#scroll-top").classList.add("active");
+  // } else {
+  //   document.querySelector("#scroll-top").classList.remove("active");
+  // }
+  // };
 
   return (
     <header className="header">
-      <a href={URL.HOME} className="fas fa-angle-up" id="scroll-top"></a>
+      {/* <Link to={URL.HOME} className="fas fa-angle-up" id="scroll-top"></Link> */}
       <a href={URL.HOME} className="logo">
         <i className="fas fa-shopping-basket"></i> Grocery
       </a>
@@ -259,14 +289,15 @@ export default function Header() {
           </span>
         </p>
       </form>
-      <form action="" className="signup-form">
+      <div action="" className="signup-form">
         <h3>SignUp</h3>
         <input
           type="email"
-          name="name"
+          name="email"
           ie=""
           placeholder="Enter your email"
           className="box"
+          onChange={onChangeSignUp}
         />
         <input
           type="password"
@@ -274,24 +305,33 @@ export default function Header() {
           ie=""
           placeholder="Password"
           className="box"
+          onChange={onChangeSignUp}
         />
         <input
           type="password"
-          name="password"
+          name="confirmPassword"
           ie=""
           placeholder="Confirm password"
           className="box"
+          onChange={onChangeSignUp}
         />
         <div className="remember">
           <input type="checkbox" name="" id="remember-me" />
           <label if="remember-me">remember me</label>
         </div>
-        <input type="submit" value="signUp" className="btn" />
+        <button
+          className="btn"
+          onClick={() => {
+            onSignUpAction();
+          }}
+        >
+          SignUp
+        </button>
         <p>
           already have an account?
           <span onClick={() => onLoginClick()}>login account</span>
         </p>
-      </form>
+      </div>
       <form action="" className="forget-password">
         <span>
           <h3>Forget Password</h3>
