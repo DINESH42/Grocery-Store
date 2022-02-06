@@ -15,3 +15,19 @@ code {
   background: #64c46f;
   color: white;
 }
+
+:root {
+  --background: #ffffff;
+  --text-primary: #000;
+  --text-secondary: #8e05c2;
+  --accent: #8e05c2;
+  --border: #333;
+  --form-bg: #fff;
+  --box-shadow: rgba(29, 66, 153, 0.788);
+  --action-color: indigo;
+  --main-color: rgb(131, 0, 0);
+}
+
+* {
+  transition: all 1s;
+}

@@ -5,11 +5,14 @@ import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import { Provider } from "react-redux";
 import { store } from "../src/BackendCalls/Store";
+import { ContextProvider } from "./ContextFile/Context";
 
 ReactDOM.render(
   <React.StrictMode>
     <Provider store={store}>
-      <App />
+      <ContextProvider>
+        <App />
+      </ContextProvider>
     </Provider>
   </React.StrictMode>,
   document.getElementById("root")

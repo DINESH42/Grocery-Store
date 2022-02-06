@@ -1,3 +1,4 @@
+import { useContext } from "react";
 import { BrowserRouter, Route } from "react-router-dom";
 import "./App.css";
 import { URL } from "./constants";
@@ -14,10 +15,13 @@ import Vegitables from "./Components/Vegitables/Vegitables";
 import Spices from "./Components/Spices/Spices";
 import Wheat from "./Components/Wheat/Wheat";
 import UserProfile from "./Components/UserProfile/UserProfile";
+import { AppContext } from "./ContextFile/Context";
 
 function App() {
+  const { theme } = useContext(AppContext);
+
   return (
-    <div className="App">
+    <div className="App" data-theme={theme}>
       <BrowserRouter>
         <Route path={URL.HOME} component={Header} />
         <Route exact path={URL.HOME} component={Dashboard} />

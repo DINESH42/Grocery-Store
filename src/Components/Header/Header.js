@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import "./Header.css";
 import { useHistory, Link } from "react-router-dom";
 import { URL } from "../../constants";
@@ -8,10 +8,12 @@ import Cart3 from "../../assests/image/cart-3.jpg";
 import Headers from "./Header.json";
 import { useSelector, useDispatch } from "react-redux";
 import { SignUpUserAction } from "../../BackendCalls/Actions/SignUpUserAction";
+import { AppContext } from "../../ContextFile/Context";
 
 export default function Header() {
   const history = useHistory();
   const dispatch = useDispatch();
+  const { theme, onHandleName } = useContext(AppContext);
 
   const LoginUser = useSelector((state) => state.LoginUser);
   const SignUpUser = useSelector((state) => state.SignUpUser);
@@ -164,6 +166,12 @@ export default function Header() {
   // }
   // };
 
+  const onThemeChange = () => {
+    const newTheme = theme === "light" ? "dark" : "light";
+    onHandleName(newTheme);
+  };
+  console.log("Onchange theme", theme);
+
   return (
     <header className="header">
       {/* <Link to={URL.HOME} className="fas fa-angle-up" id="scroll-top"></Link> */}
@@ -199,6 +207,13 @@ export default function Header() {
           className="fas fa-user"
           onClick={() => {
             onLoginClick();
+          }}
+        ></div>
+        <div
+          id="login-btn"
+          className="fas fa-moon"
+          onClick={() => {
+            onThemeChange();
           }}
         ></div>
       </div>

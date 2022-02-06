@@ -1,6 +1,7 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  background-color: var(--background);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -31,4 +32,18 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+[data-theme="dark"] {
+  --background: #000;
+  ---light-color: #fff;
+  --text-secondary: #8e05c2;
+  --accent: #8e05c2;
+  --border: #808080;
+  --form-bg: #191919;
+  --box-shadow: rgba(0, 56, 185, 0.788);
+  --action-color: rgb(98, 11, 168);
+  --black: #fff;
+  --main-color: #222;
+  ---light-bg: #000;
 }
