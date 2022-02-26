@@ -16,12 +16,14 @@ import Spices from "./Components/Spices/Spices";
 import Wheat from "./Components/Wheat/Wheat";
 import UserProfile from "./Components/UserProfile/UserProfile";
 import { AppContext } from "./ContextFile/Context";
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   const { theme } = useContext(AppContext);
 
   return (
     <div className="App" data-theme={theme}>
+      <ScrollToTop smooth color="#64c46f" />
       <BrowserRouter>
         <Route path={URL.HOME} component={Header} />
         <Route exact path={URL.HOME} component={Dashboard} />

@@ -179,12 +179,12 @@ export default function Header() {
         <i className="fas fa-shopping-basket"></i> Grocery
       </a>
       <nav className="navbar">
-        <a href={URL.HOME}>Home</a>
-        <a href={URL.SHOPS}>Shop</a>
-        <a href={URL.ABOUT}>About</a>
-        <a href={URL.REVIEW}>Review</a>
-        <a href={URL.BLOGS}>Blog</a>
-        <a href={URL.CONTACTUS}>Contact</a>
+        <Link to={URL.HOME}>Home</Link>
+        <Link to={URL.SHOPS}>Shop</Link>
+        <Link to={URL.ABOUT}>About</Link>
+        <Link to={URL.REVIEW}>Review</Link>
+        <Link to={URL.BLOGS}>Blog</Link>
+        <Link to={URL.CONTACTUS}>ContLinkct</Link>
       </nav>
       <div className="icons">
         <div

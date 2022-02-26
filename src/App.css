@@ -3,6 +3,9 @@
   pointer-events: none;
   background-color: var(--background);
 }
+.scrollToTopStyle {
+  color: #64c46f;
+}
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
