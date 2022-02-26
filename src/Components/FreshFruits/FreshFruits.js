@@ -7,6 +7,7 @@ import Fruit3 from "../../assests/image/fruit-3.jpg";
 import Fruit4 from "../../assests/image/fruit-4.jpg";
 import Fruit5 from "../../assests/image/fruit-5.jpg";
 import Fruit6 from "../../assests/image/fruit-6.jpg";
+import { Link } from "react-router-dom";
 
 export default function FreshFruits() {
   return (
@@ -14,15 +15,15 @@ export default function FreshFruits() {
       <div className="heading">
         <h1>Fresh fruits</h1>
         <p>
-          <a href={URL.SHOPS}>
+          <Link to={URL.SHOPS}>
             Home{">> "}Shop{">> "}
-          </a>
+          </Link>
           Fresh Fruits
         </p>
       </div>
       <section className="fruits">
         <h1 className="title">
-          Fresh <span>Fruits</span> <a href={URL.FRUITS}>View all {">>"}</a>
+          Fresh <span>Fruits</span> <Link to={URL.FRUITS}>View all {">>"}</Link>
         </h1>
         <div className="box-container">
           <div className="box">

@@ -1,6 +1,7 @@
 import React from "react";
 import "./ContactUs.css";
 import { URL } from "../../constants";
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
   return (
@@ -8,7 +9,7 @@ export default function ContactUs() {
       <div className="heading">
         <h1>contact us</h1>
         <p>
-          <a href={URL.HOME}>Home{">>"}</a>Contact
+          <Link to={URL.HOME}>Home{">>"}</Link>Contact
         </p>
       </div>
       <section className="contact">

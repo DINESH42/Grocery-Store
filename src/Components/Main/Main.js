@@ -2,6 +2,8 @@ import React from "react";
 import home1 from "../../assests/image/home-img-1.png";
 import home2 from "../../assests/image/home-img-2.png";
 import home3 from "../../assests/image/home-img-3.png";
+import { Link } from "react-router-dom";
+import { URL } from "../../constants";
 
 import "./Main.css";
 
@@ -29,9 +31,9 @@ export default function Main() {
           <div className="content">
             <span>fresh and organic</span>
             <h3>upto 50% off</h3>
-            <a href="/" className="btn">
+            <Link to={URL.HOME} className="btn">
               shop now
-            </a>
+            </Link>
           </div>
           <div className="image">
             <img src={home1} alt="" />
@@ -41,9 +43,9 @@ export default function Main() {
           <div className="content">
             <span>fresh and organic</span>
             <h3>upto 50% off</h3>
-            <a href="/" className="btn">
+            <Link to={URL.HOME} className="btn">
               shop now
-            </a>
+            </Link>
           </div>
           <div className="image">
             <img src={home2} alt="" />
@@ -53,9 +55,9 @@ export default function Main() {
           <div className="content">
             <span>fresh and organic</span>
             <h3>upto 50% off</h3>
-            <a href="/" className="btn">
+            <Link to={URL.HOME} className="btn">
               shop now
-            </a>
+            </Link>
           </div>
           <div className="image">
             <img src={home3} alt="" />

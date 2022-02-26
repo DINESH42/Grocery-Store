@@ -10,6 +10,7 @@ import user4 from "../../assests/image/pic-4.png";
 import user5 from "../../assests/image/pic-5.png";
 import user6 from "../../assests/image/pic-6.png";
 import { URL } from "../../constants";
+import { Link } from "react-router-dom";
 
 export default function CustomerReview() {
   return (
@@ -17,7 +18,7 @@ export default function CustomerReview() {
       <div className="heading">
         <h1>Customer's review</h1>
         <p>
-          <a href={URL.HOME}>Home {">>"}</a>review
+          <Link to={URL.HOME}>Home {">>"}</Link>review
         </p>
       </div>
       <section className="info-container">

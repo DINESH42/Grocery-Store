@@ -7,6 +7,7 @@ import phonePay from "../../assests/image/PhonePay.png";
 import googlePay from "../../assests/image/GooglePay.png";
 import amazonPay from "../../assests/image/AmazonPAy.png";
 import { URL } from "../../constants";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
@@ -15,57 +16,57 @@ export default function Footer() {
         <div className="box-container">
           <div className="box">
             <h3>quick linkes</h3>
-            <a href={URL.HOME}>
+            <Link to={URL.HOME}>
               <i className="fas fa-arrow-right"></i>Home
-            </a>
-            <a href={URL.SHOPS}>
+            </Link>
+            <Link to={URL.SHOPS}>
               <i className="fas fa-arrow-right"></i>Shop
-            </a>
-            <a href={URL.ABOUT}>
+            </Link>
+            <Link to={URL.ABOUT}>
               <i className="fas fa-arrow-right"></i>About
-            </a>
-            <a href={URL.REVIEW}>
+            </Link>
+            <Link to={URL.REVIEW}>
               <i className="fas fa-arrow-right"></i>Review
-            </a>
-            <a href={URL.BLOGS}>
+            </Link>
+            <Link to={URL.BLOGS}>
               <i className="fas fa-arrow-right"></i>Blog
-            </a>
-            <a href={URL.CONTACTUS}>
+            </Link>
+            <Link to={URL.CONTACTUS}>
               <i className="fas fa-arrow-right"></i>Contact
-            </a>
+            </Link>
           </div>
           <div className="box">
             <h3>Extra links</h3>
-            <a href={URL.HOME}>
+            <Link to={URL.HOME}>
               <i className="fas fa-arrow-right"></i>My order
-            </a>
-            <a href={URL.HOME}>
+            </Link>
+            <Link to={URL.HOME}>
               <i className="fas fa-arrow-right"></i>My favorite
-            </a>
-            <a href={URL.HOME}>
+            </Link>
+            <Link to={URL.HOME}>
               <i className="fas fa-arrow-right"></i>My wishlist
-            </a>
-            <a href={URL.HOME}>
+            </Link>
+            <Link to={URL.HOME}>
               <i className="fas fa-arrow-right"></i>My account
-            </a>
-            <a href={URL.HOME}>
+            </Link>
+            <Link to={URL.HOME}>
               <i className="fas fa-arrow-right"></i>term of use
-            </a>
+            </Link>
           </div>
           <div className="box">
             <h3>Follow me</h3>
-            <a href="https://www.facebook.com/350dkcse/">
+            <Link to="https://www.facebook.com/350dkcse/">
               <i className="fab fa-facebook-f"></i> facebook
-            </a>
-            <a href="https://twitter.com/Dineshk47042114">
+            </Link>
+            <Link to="https://twitter.com/Dineshk47042114">
               <i className="fab fa-twitter"></i> twitter
-            </a>
-            <a href={URL.HOME}>
+            </Link>
+            <Link to={URL.HOME}>
               <i className="fab fa-instagram"></i> instagram
-            </a>
-            <a href="https://www.linkedin.com/in/dinesh-kumar-38424614a/">
+            </Link>
+            <Link to="https://www.linkedin.com/in/dinesh-kumar-38424614a/">
               <i className="fab fa-linkedin"></i> linkedin
-            </a>
+            </Link>
           </div>
           <div className="box">
             <h3>new letters</h3>
@@ -76,26 +77,26 @@ export default function Footer() {
             </form>
             <img src={payment} alt="" className="payment" />
             {/* <nav className="payNavbar">
-              <a href={URL.HOME}>
+              <Link to={URL.HOME}>
                 Card
                 <img src={Card} alt="card"></img>
-              </a>
-              <a href={URL.ABOUT}>
+              </Link>
+              <Link to={URL.ABOUT}>
                 UPI
                 <img src={upiPay} alt="upi"></img>
-              </a>
-              <a href={URL.REVIEW}>
+              </Link>
+              <Link to={URL.REVIEW}>
                 PhonePay
                 <img src={phonePay} alt="PhonePay"></img>
-              </a>
-              <a href={URL.REVIEW}>
+              </Link>
+              <Link to={URL.REVIEW}>
                 GoogePay
                 <img src={googlePay} alt="GoogePay"></img>
-              </a>
-              <a href={URL.SHOPS}>
+              </Link>
+              <Link to={URL.SHOPS}>
                 AmazonPay
                 <img src={amazonPay} alt="AmazonPay"></img>
-              </a>
+              </Link>
             </nav> */}
           </div>
         </div>
