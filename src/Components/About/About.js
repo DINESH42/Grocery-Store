@@ -8,6 +8,7 @@ import imggallery4 from "../../assests/image/gallery-img-4.jpg";
 import imggallery5 from "../../assests/image/gallery-img-5.jpg";
 import imggallery6 from "../../assests/image/gallery-img-6.jpg";
 import { URL } from "../../constants";
+import { Link } from "react-router-dom";
 
 export default function About() {
   return (
@@ -15,7 +16,7 @@ export default function About() {
       <div className="heading">
         <h1>about us</h1>
         <p>
-          <a href={URL.HOME}>Home {">>"}</a>about
+          <Link to={URL.HOME}>Home {">>"}</Link>about
         </p>
       </div>
       <section className="about">
@@ -36,9 +37,9 @@ export default function About() {
             cumque molestiae blanditiis deleniti aspernatur, ab tempora quisquam
             sapiente commodi hic.
           </p>
-          <a href={URL.ABOUT} className="btn">
+          <Link to={URL.ABOUT} className="btn">
             read more
-          </a>
+          </Link>
         </div>
       </section>
       <section className="gallery">

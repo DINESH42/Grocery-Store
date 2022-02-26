@@ -4,6 +4,8 @@ import banner1 from "../../assests/image/banner-1.jpg";
 import banner2 from "../../assests/image/banner-2.jpg";
 import banner3 from "../../assests/image/banner-3.jpg";
 import banners from "./Banner.json";
+import { URL } from "../../constants";
+import { Link } from "react-router-dom";
 
 export default function Banner() {
   console.log("banners :", banners.Banner);
@@ -15,9 +17,9 @@ export default function Banner() {
         <div className="content">
           <span>limited sales</span>
           <h3>upto 50% off</h3>
-          <a href="/" className="btn">
+          <Link to={URL.HOME} className="btn">
             shop now
-          </a>
+          </Link>
         </div>
       </div>
       <div className="banner">
@@ -25,9 +27,9 @@ export default function Banner() {
         <div className="content">
           <span>limited sales</span>
           <h3>upto 50% off</h3>
-          <a href="/" className="btn">
+          <Link to={URL.HOME} className="btn">
             shop now
-          </a>
+          </Link>
         </div>
       </div>
       <div className="banner">
@@ -35,9 +37,9 @@ export default function Banner() {
         <div className="content">
           <span>limited sales</span>
           <h3>upto 50% off</h3>
-          <a href="/" className="btn">
+          <Link to={URL.HOME} className="btn">
             shop now
-          </a>
+          </Link>
         </div>
       </div>
     </section>
