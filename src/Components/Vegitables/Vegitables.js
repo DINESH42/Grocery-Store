@@ -7,6 +7,7 @@ import vegitable3 from "../../assests/image/vegitable-3.jpg";
 import vegitable4 from "../../assests/image/vegitable-4.jpg";
 import vegitable5 from "../../assests/image/vegitable-5.jpg";
 import vegitable6 from "../../assests/image/vegitable-6.jpg";
+import { Link } from "react-router-dom";
 
 export default function Vegitables() {
   return (
@@ -14,15 +15,16 @@ export default function Vegitables() {
       <div className="heading">
         <h1>Fresh fruits</h1>
         <p>
-          <a href={URL.SHOPS}>
+          <Link to={URL.SHOPS}>
             Home{">> "}Shop{">> "}
-          </a>
+          </Link>
           Vegitables
         </p>
       </div>
       <section className="vegitables">
         <h1 className="title">
-          Fresh <span>Vegitables</span> <a href={URL.FRUITS}>View all {">>"}</a>
+          Fresh <span>Vegitables</span>{" "}
+          <Link to={URL.FRUITS}>View all {">>"}</Link>
         </h1>
         <div className="box-container">
           <div className="box">

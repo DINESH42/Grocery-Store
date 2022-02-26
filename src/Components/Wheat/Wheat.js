@@ -7,6 +7,7 @@ import wheat3 from "../../assests/image/wheat-3.jpg";
 import wheat4 from "../../assests/image/wheat-4.jpg";
 import wheat5 from "../../assests/image/wheat-5.jpg";
 import wheat6 from "../../assests/image/wheat-6.jpg";
+import { Link } from "react-router-dom";
 
 export default function Wheat() {
   return (
@@ -14,15 +15,16 @@ export default function Wheat() {
       <div className="heading">
         <h1>Wheat</h1>
         <p>
-          <a href={URL.SHOPS}>
+          <Link to={URL.SHOPS}>
             Home{">> "}Shop{">> "}
-          </a>
+          </Link>
           Wheat
         </p>
       </div>
       <section className="wheats">
         <h1 className="title">
-          organic <span> wheat</span> <a href={URL.FRUITS}>View all {">>"}</a>
+          organic <span> wheat</span>{" "}
+          <Link to={URL.FRUITS}>View all {">>"}</Link>
         </h1>
         <div className="box-container">
           <div className="box">

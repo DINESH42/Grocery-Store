@@ -13,6 +13,7 @@ import imgProduct5 from "../../assests/image/product-5.jpg";
 import imgProduct6 from "../../assests/image/product-6.jpg";
 import imgProduct7 from "../../assests/image/product-7.jpg";
 import imgProduct8 from "../../assests/image/product-8.jpg";
+import { Link } from "react-router-dom";
 
 export default function Shops() {
   return (
@@ -20,35 +21,35 @@ export default function Shops() {
       <div className="heading">
         <h1>our shop</h1>
         <p>
-          <a href={URL.HOME}>Home{">>"}</a>Shop
+          <Link to={URL.HOME}>Home{">>"}</Link>Shop
         </p>
       </div>
       <section className="category">
         <h1 className="title">
-          our <span>category</span> <a href={URL.SHOPS}>View all {">>"}</a>
+          our <span>category</span> <Link to={URL.SHOPS}>View all {">>"}</Link>
         </h1>
         <div className="box-container">
-          <a href={URL.FRUITS} className="box">
+          <Link to={URL.FRUITS} className="box">
             <img src={imgcategory1} alt="" />
             <h3>fresh fruits</h3>
-          </a>
-          <a href={URL.VEGITABLES} className="box">
+          </Link>
+          <Link to={URL.VEGITABLES} className="box">
             <img src={imgcategory2} alt="" />
             <h3>vegetables</h3>
-          </a>
-          <a href={URL.SPICES} className="box">
+          </Link>
+          <Link to={URL.SPICES} className="box">
             <img src={imgcategory3} alt="" />
             <h3>organic spices</h3>
-          </a>
-          <a href={URL.WHEAT} className="box">
+          </Link>
+          <Link to={URL.WHEAT} className="box">
             <img src={imgcategory5} alt="" />
             <h3>organic wheat</h3>
-          </a>
+          </Link>
         </div>
       </section>
       <section className="products">
         <h1 className="title">
-          our <span>category</span> <a href={URL.SHOPS}>View all {">>"}</a>
+          our <span>category</span> <Link to={URL.SHOPS}>View all {">>"}</Link>
         </h1>
         <div className="box-container">
           <div className="box">
