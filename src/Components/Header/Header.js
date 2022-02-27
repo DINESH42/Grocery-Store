@@ -184,7 +184,7 @@ export default function Header() {
         <Link to={URL.ABOUT}>About</Link>
         <Link to={URL.REVIEW}>Review</Link>
         <Link to={URL.BLOGS}>Blog</Link>
-        <Link to={URL.CONTACTUS}>ContLinkct</Link>
+        <Link to={URL.CONTACTUS}>Contact</Link>
       </nav>
       <div className="icons">
         <div
